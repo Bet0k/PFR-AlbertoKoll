@@ -1,0 +1,25 @@
+.header{
+    background-color: #000000;
+    color: snow;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.navbar__item{
+    padding: .9rem;
+}
+
+.navbar__link{
+    font-size: 1.6em;
+}
