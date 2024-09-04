@@ -1,4 +1,17 @@
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.routeTitle {
+  margin-top: 0;
+  text-align: center;
+  padding: 30px;
+  font-size: 50px;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.main-content {
+  padding-top: 70px;
 }

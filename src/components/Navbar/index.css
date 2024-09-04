@@ -1,25 +1,44 @@
-.header{
-    background-color: #000000;
-    color: snow;
+.navbar {
+  background-color: #F5F5DC !important;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar-logo {
+  width: 100px;
+  height: auto;
 }
 
-.navbar__menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
+.navbar-brand {
+  margin-right: auto;
 }
 
-.navbar__item{
-    padding: .9rem;
+.navbar-nav {
+  margin-left: auto;
+  font-size: 20px !important;
+  gap: 30px;
 }
 
-.navbar__link{
-    font-size: 1.6em;
+.navbar-nav .nav-link {
+  color: #4B0E0E !important;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border: 1px solid #4B0E0E !important;
+}
+
+.navbar-toggler::after {
+  font-family: 'FontAwesome';
+  font-size: 1.5em;
+  color: #4B0E0E;
+}
+
+.navbar-toggler-icon{
+  color: red !important;
+}
+
+body {
+  padding-top: 100px;
 }
