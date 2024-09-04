@@ -1,0 +1,36 @@
+.item-detail {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .item-detail__image {
+    padding: 40px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .item-detail__price {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  h3 {
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  

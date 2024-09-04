@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/react';
-import Pill from '../pill';
+import Pill from '../Pill';
 
 const CartWidget = () => {
     return (

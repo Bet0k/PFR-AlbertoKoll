@@ -1,0 +1,122 @@
+[
+    { 
+      "id": 1,
+      "category": "Pizzas",
+      "name": "Pizza Muzzarella", 
+      "description": "Pizza de Muzzarella Grande", 
+      "price": "$7500",
+      "image": "pizzaImage"
+    },
+    { 
+      "id": 2,
+      "category": "Pizzas",
+      "name": "Pizza Roquefort", 
+      "description": "Pizza de Roquefort Grande", 
+      "price": "$8500",
+      "image": "pizzaRoque"
+    },
+    { 
+        "id": 3,
+        "category": "Pizzas",
+        "name": "Pizza jamón y morrón", 
+        "description": "Pizza jamón y morrón Grande", 
+        "price": "$8500",
+        "image": "pizzaJyM"
+    },
+    { 
+        "id": 4,
+        "category": "Pizzas",
+        "name": "Pizza Calabresa", 
+        "description": "Pizza de calabresa Grande", 
+        "price": "$8500",
+        "image": "pizzaCalabresa"
+    },
+    { 
+      "id": 5,
+      "category": "Pastas",
+      "name": "Ravioles 4 quesos", 
+      "description": "Ravioles con relleno de 4 quesos, con salsa a elección", 
+      "price": "$7500",
+      "image": "spaghettiImage"
+    },
+    {
+      "id": 6,
+      "category": "Pastas",
+      "name": "Sorrentinos de jamón y queso",
+      "description": "Sorrentinos con relleno de 4 quesos, con salsa a elección", 
+      "price": "$8500",
+      "image": "sorrentinosJyQ"
+    },
+    {
+      "id": 7,
+      "category": "Empanadas",
+      "name": "Empanada de Carne",
+      "description": "Empanada rellena de carne, huevo y aceitunas", 
+      "price": "$1500",
+      "image": "empaCarne"
+    },
+    {
+      "id": 8,
+      "category": "Empanadas",
+      "name": "Empanada de jamón y queso",
+      "description": "Empanada rellena de jamón y muzzarella", 
+      "price": "$1500",
+      "image": "empaJyQ"
+    },
+    {
+      "id": 9,
+      "category": "Empanadas",
+      "name": "Docena de empanadas",
+      "description": "Docena de empanadas a elección", 
+      "price": "$15000",
+      "image": "docenaEmpa"
+    },
+    {
+      "id": 10,
+      "category": "Milanesas",
+      "name": "Milanesa con papas fritas",
+      "description": "Milanesa de carne / pollo acompañado papas fritas", 
+      "price": "$8000",
+      "image": "milaImage"
+    },
+    {
+      "id": 11,
+      "category": "Milanesas",
+      "name": "Milanesa napolitana con papas fritas",
+      "description": "Milanesa de carne / pollo acompañado de papas fritas", 
+      "price": "$9000",
+      "image": "milaNapo"
+    },
+    {
+        "id": 12,
+        "category": "Carnes",
+        "name": "Lomo al champignon",
+        "description": "Lomo al champignon", 
+        "price": "$18000",
+        "image": "lomoChampi"
+    },
+    {
+        "id": 13,
+        "category": "Carnes",
+        "name": "Lomo al verdeo",
+        "description": "Lomo al verdeo con papas noisette", 
+        "price": "$20000",
+        "image": "lomoVerdeo"
+    },
+    {
+        "id": 14,
+        "category": "Carnes",
+        "name": "Bife de chorizo",
+        "description": "Bife de chorizo a la mostaza con puré de batatas a la miel", 
+        "price": "$22000",
+        "image": "bifeChorizo"
+    },
+    {
+      "id": 15,
+      "category": "Postres",
+      "name": "Flan Casero",
+      "description": "Flan casero acompañado de Dulce de leche y crema", 
+      "price": "$5000",
+      "image": "Flan"
+    }
+]

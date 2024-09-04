@@ -1,31 +1,31 @@
-import logo from '../../assets/logo.png'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/logo.png';
 import CartWidget from '../CartWidget';
-import Pill from '../pill';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import './index.css';
 
-const Navbar = () => {
-    return(
-<header className="header">
-    <nav className="navbar container">
-        <figure className="navbar__logo">
-            <img src={logo} alt="Logo Potis Restó"/>
-        </figure>
-        <menu className="navbar__menu">
-            <li className="navbar__item">
-                <a href="" className="navbar__link">Menú</a>
-            </li>
-            <li className="navbar__item">
-                <a href="" className="navbar__link">Sucursales</a>
-            </li>
-            <li className="navbar__item">
-                <a href="" className="navbar__link">Contacto</a>
-            </li>
-            <li>
-                <a href="" className="navbar__link"><CartWidget/></a>
-            </li>
-        </menu>
-    </nav>
-</header>
-    );
-}
+const CustomNavbar = () => {
+  return (
+    <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className="navbar-custom">
+      <Container fluid>
+        <Navbar.Brand as={Link} to="" className="me-auto">
+          <img src={logo} alt="Logo Potis Restó" className="navbar-logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link as={Link} to="/menu">Menú</Nav.Link>
+            <Nav.Link as={Link} to="/locations">Sucursales</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Contacto</Nav.Link>
+            <Nav.Link as={Link} to="/cart">
+              <CartWidget />
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
 
-export default Navbar;
+export default CustomNavbar;
