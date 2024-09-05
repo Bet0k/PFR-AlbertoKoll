@@ -1,33 +1,32 @@
-//Pizzas
-import pizzaImage from '../Menu/Pizzas/PizzaMuzza.webp';
-import pizzaRoque from '../Menu/Pizzas/PizzaRoque.webp';
-import pizzaJyM from '../Menu/Pizzas/PizzaJyM.webp';
-import pizzaCalabresa from '../Menu/Pizzas/PizzaCalabresa.webp';
+// Pizzas
+import pizzaImage from './Pizzas/PizzaMuzza.webp';
+import pizzaRoque from './Pizzas/PizzaRoque.webp';
+import pizzaJyM from './Pizzas/PizzaJyM.webp';
+import pizzaCalabresa from './Pizzas/PizzaCalabresa.webp';
 
+// Pastas
+import spaghettiImage from './Pastas/Ravioles.webp';
+import sorrentinosJyQ from './Pastas/SorrentinosJyQ.webp';
 
-//Pastas
-import spaghettiImage from '../Menu/Pastas/Ravioles.webp';
-import sorrentinosJyQ from '../Menu/Pastas/SorrentinosJyQ.webp';
+// Empanadas
+import empaCarne from './Empanadas/EmpaCarne.webp';
+import empaJyQ from './Empanadas/EmpaJyQ.webp';
+import docenaEmpa from './Empanadas/DocenaEmpa.webp';
 
-//Empanadas
-import empaCarne from '../Menu/Empanadas/EmpaCarne.webp';
-import empaJyQ from '../Menu/Empanadas/EmpaJyQ.webp';
-import docenaEmpa from '../Menu/Empanadas/DocenaEmpa.webp';
+// Milanesas
+import milaImage from './Milanesas/Milanesa.webp';
+import milaNapo from './Milanesas/MilaNapo.webp';
 
-//Milanesas
-import milaImage from '../Menu/Milanesas/Milanesa.webp';
-import milaNapo from '../Menu/Milanesas/MilaNapo.webp';
+// Carnes
+import lomoChampi from './Carnes/LomoChampi.webp';
+import lomoVerdeo from './Carnes/LomoVerdeo.webp';
+import bifeChorizo from './Carnes/BifeChorizo.webp';
 
-//Carnes
-import lomoChampi from '../Menu/Carnes/LomoChampi.webp';
-import lomoVerdeo from '../Menu/Carnes/LomoVerdeo.webp';
-import bifeChorizo from '../Menu/Carnes/BifeChorizo.webp';
+// Postres
+import Flan from './Postres/Flan.webp';
 
-//Postres
-import Flan from '../Menu/Postres/Flan.webp'
-
-//NotFound
-import notFound from './NotFound/NotFound.webp'
+// NotFound
+import notFound from './NotFound/NotFound.webp';
 
 export const images = {
   pizzaImage,
