@@ -19,7 +19,7 @@ import milaNapo from './Milanesas/MilaNapo.webp';
 
 // Carnes
 import lomoChampi from './Carnes/LomoChampi.webp';
-import lomoVerdeo from './Carnes/LomoVerdeo.webp';
+import lomoVerdeo from './Carnes/LomoAlVerdeo.webp';
 import bifeChorizo from './Carnes/BifeChorizo.webp';
 
 // Postres
