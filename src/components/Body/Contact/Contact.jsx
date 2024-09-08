@@ -15,7 +15,7 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    // Validar solo números para el campo de teléfono
+
     if (name === 'phone' && !/^\d*$/.test(value)) return;
 
     setFormData({ ...formData, [name]: value });
@@ -24,14 +24,11 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validar que todos los campos están llenos
     if (!formData.firstName || !formData.lastName || !formData.phone || !formData.message) {
       setError('Por favor, completa todos los campos.');
       setSuccess('');
       return;
     }
-
-    // Validar el formato del teléfono (puedes ajustar la expresión regular según tus necesidades)
     if (!/^\d{10,15}$/.test(formData.phone)) {
       setError('Número de teléfono inválido. Debe contener entre 10 y 15 dígitos.');
       setSuccess('');
@@ -43,7 +40,6 @@ const Contact = () => {
 
     console.log('Form Data:', formData);
 
-    // Limpiar el formulario después de enviarlo
     setFormData({
       firstName: '',
       lastName: '',
@@ -89,7 +85,6 @@ const Contact = () => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              // Opcionalmente, puedes agregar un patrón para ayudar a la validación
               pattern="\d*"
             />
           </Form.Group>
