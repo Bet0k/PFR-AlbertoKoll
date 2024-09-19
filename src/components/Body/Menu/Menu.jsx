@@ -2,14 +2,30 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Menu.css';
 import { images } from '../../../assets/Menu/menu';
-import data from '../../../assets/Menu/dishes.json';
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../../../config/firebase.config';
 
 const Menu = () => {
   const [dishes, setDishes] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   useEffect(() => {
-    setDishes(data);
+    const fetchDishes = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, 'items'));
+        const dishesArray = querySnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data(),         
+        }));
+
+        
+        setDishes(dishesArray);
+      } catch (error) {
+        console.error('Error fetching dishes: ', error);
+      }
+    };
+
+    fetchDishes();
   }, []);
 
   const groupedDishes = dishes.reduce((acc, dish) => {
@@ -27,6 +43,8 @@ const Menu = () => {
   const filteredDishes = selectedCategory === 'All'
     ? dishes
     : dishes.filter(dish => dish.category === selectedCategory);
+    console.log(dishes);
+    
 
   const categoriesToDisplay = selectedCategory === 'All'
     ? Object.keys(groupedDishes)
@@ -44,7 +62,7 @@ const Menu = () => {
         </button>
         {Object.keys(groupedDishes).map((category) => (
           <button 
-            key={category} 
+            key={`category-${category}`}
             className={`menu__category-button ${selectedCategory === category ? 'active' : ''}`} 
             onClick={() => handleCategoryClick(category)}
           >
@@ -53,7 +71,7 @@ const Menu = () => {
         ))}
       </div>
       {categoriesToDisplay.map((category) => (
-        <div key={category} className="menu__category">
+        <div key={`category-container-${category}`} className="menu__category">
           <h3 className="menu__category-title">{category}</h3>
           <div className="menu__cards">
             {filteredDishes
@@ -61,13 +79,17 @@ const Menu = () => {
               .map((dish) => (
                 <Link 
                   to={`/item/${dish.id}`} 
-                  key={dish.id} 
+                  key={dish.id}
                   className="menu__card"
                 >
-                  <img src={images[dish.image]} alt={dish.name} className="menu__card-image" />
+                  <img 
+                    src={images[dish.image]} 
+                    alt={dish.name} 
+                    className="menu__card-image" 
+                  />
                   <h4 className="menu__card-title">{dish.name}</h4>
                   <p className="menu__card-description">{dish.description}</p>
-                  <span className="menu__card-price">{dish.price}</span>
+                  <span className="menu__card-price">${dish.price}</span>
                 </Link>
             ))}
           </div>
