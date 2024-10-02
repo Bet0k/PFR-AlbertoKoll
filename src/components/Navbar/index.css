@@ -29,14 +29,14 @@
   border: 1px solid #4B0E0E !important;
 }
 
+.navbar-toggler-icon {
+  background-color: #4B0E0E;
+}
+
 .navbar-toggler::after {
   font-family: 'FontAwesome';
   font-size: 1.5em;
   color: #4B0E0E;
-}
-
-.navbar-toggler-icon{
-  color: red !important;
 }
 
 body {

@@ -1,3 +1,165 @@
-h2{
-    padding: 50px;
+.cart {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .cart ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart li:last-child {
+    border-bottom: none;
+  }
+  
+  .cart img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .cart div {
+    flex-grow: 1;
+  }
+  
+  .cart p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .remove-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    color: #ff0000;
+    font-size: 20px;
+  }
+  
+  .remove-button:hover {
+    color: #cc0000;
+  }
+  
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-content input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  transition: border 0.3s;
+}
+
+.modal-content input:focus {
+  border: 1px solid #4B0E0E;
+  outline: none;
+}
+
+.modal-content button {
+  margin-top: 15px; 
+  background-color: #e0e0e0;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #c82333;
+}
+
+form button {
+  padding: 10px;
+  background-color: #4B0E0E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:disabled {
+  background-color: #6c757d;
+}
+
+form button:hover:not(:disabled) {
+  color:white;
+  background-color: #4B0E0E;
+}
+
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.modal-content .close-button {
+  margin-top: 15px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100px;
+  align-self: center;
+}
+
+.modal-content .close-button:hover {
+  background-color: #504143;
 }
